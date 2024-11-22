@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="assets/css/master.css">
 </head>
 
-<body dir="rtl" class="font-primary">
+<body dir="rtl" class="font-primary overflow-x-hidden h-[900vh]">
     <!--===== START MAIN =====-->
-    <main>
+    <main class="px-2">
         <!--===== START NAV =====-->
         <nav
-            class="parent py-4 flex justify-between items-center min-h-[80px] sticky top-0 backdrop-blur-lg bg-[#fff5]">
+            class="parent py-4 flex justify-between items-center min-h-[80px] border-b-1 sticky top-0 backdrop-blur-lg bg-[#fff5] z-50">
             <a href="#" title="Logo">
                 <figure>
                     <img src="assets/images/logo-white.svg" alt="">
@@ -104,6 +104,38 @@
             </a>
         </nav>
         <!--===== END MAIN =====-->
+        <!--===== START HEADER =====-->
+        <header
+            class="parent min-h-[60vh] flex justify-center items-center py-14 px-[4rem!important] bg-gradient-to-br from-blue-950 to-blue-900 rounded-lg relative  before:content[''] before:hidden before:w-1/2 before:h-full before:absolute before:top-0 before:overflow-hidden before:left-0 before:[background-image:url('../images/wave.svg')] lg:before:flex">
+            <div class="flex flex-col gap-4  lg:gap-8 h-full w-full lg:w-1/2">
+                <div class="flex flex-col items-center lg:items-start gap-2 *:text-[2rem] *:text-white *:font-bold">
+                    <span>بیش از ۱۴ سال</span>
+                    <span class="text-center">انتخاب مطمئنِ کسب و کارهای آنلاین</span>
+                </div>
+                <p class="text-justify  text-white leading-10 align-last-center">
+                    زرین‌پال، اولین پرداخت‌یار پیشگام کشور، با به‌کارگیری سبک و استانداردهای جدید در ارائه‌ی خدمات درگاه
+                    پرداخت اینترنتی،
+                    سرویس‌های متنوعی در حوزه‌ی پرداخت الکترونیک را برای کسب و کارها ارائه کرده است؛ با این هدف که در
+                    افزایش سهم تجارت
+                    الکترونیکی در تولید ناخالص ملی و کمک به رشد و توسعه‌ی کسب‌وکارها، نقش سازنده‌‌ای ایفا کند.
+                </p>
+                <div class="flex gap-4 justify-center items-center lg:justify-start">
+                    <a href="#" class="btn btn-yellow">ثبت نام</a>
+                    <a href="#" class="btn btn-transparent">ورود</a>
+                </div>
+            </div>
+            <figure class="hidden lg:flex h-full w-1/2 p-5 relative">
+                <img src="assets/images/home.svg" alt="" class="w-full aspect-square">
+            </figure>
+            <!-- Arrow icon -->
+            <div class="absolute bottom-0 flex justify-center  items-center w-40 translate-y-1/2 *:w-full">
+                <img src="assets/images/arrowbottom.svg" alt="">
+                <span class="material-symbols-outlined absolute flex justify-center text-blue-950 text-5xl translate-y-[-30%]">
+                    keyboard_arrow_down
+                </span>
+            </div>
+        </header>
+        <!--===== END HEADER =====-->
     </main>
     <!--===== END MAIN =====-->
 </body>
