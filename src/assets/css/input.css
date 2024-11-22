@@ -17,3 +17,9 @@
     font-display: swap;
 }
 }
+
+@layer utilities{
+    .parent{
+        @apply w-full xl:container mx-auto px-2;
+    }
+}
