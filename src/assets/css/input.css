@@ -2,41 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    @font-face{
-    font-family: "Yekan";
-    src: url("../fonts/YekanMedium.woff") format("woff");
-    font-weight: normal;
-    font-display: swap;
-}
-
-@font-face{
-    font-family: "Yekan";
-    src: url("../fonts/YekanBold.woff") format("woff");
-    font-weight: bold;
-    font-display: swap;
-}
-}
-
-@layer components{
-    .btn{
-        @apply flex items-center justify-center px-4 py-2 rounded font-bold ;
+@layer base {
+    @font-face {
+        font-family: "Yekan";
+        src: url("../fonts/YekanMedium.woff") format("woff");
+        font-weight: normal;
+        font-display: swap;
     }
-    .btn-transparent{
+
+    @font-face {
+        font-family: "Yekan";
+        src: url("../fonts/YekanBold.woff") format("woff");
+        font-weight: bold;
+        font-display: swap;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply flex items-center gap-2 justify-center px-4 py-2 rounded font-bold;
+    }
+
+    .btn-transparent {
         @apply bg-[#fff5] text-white;
     }
-    .btn-yellow{
+
+    .btn-yellow {
         @apply bg-yellow-400 text-black;
+    }
+
+    .btn-blue {
+        @apply bg-blue-100 text-blue-800;
     }
 }
 
-@layer utilities{
-    .parent{
+@layer utilities {
+    .parent {
         @apply w-full xl:container mx-auto px-2;
     }
 
-    .align-last-center{
+    .align-last-center {
         text-align-last: center;
     }
 }
-
