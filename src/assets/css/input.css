@@ -18,8 +18,25 @@
 }
 }
 
+@layer components{
+    .btn{
+        @apply flex items-center justify-center px-4 py-2 rounded font-bold ;
+    }
+    .btn-transparent{
+        @apply bg-[#fff5] text-white;
+    }
+    .btn-yellow{
+        @apply bg-yellow-400 text-black;
+    }
+}
+
 @layer utilities{
     .parent{
         @apply w-full xl:container mx-auto px-2;
     }
+
+    .align-last-center{
+        text-align-last: center;
+    }
 }
+
